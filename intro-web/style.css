@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: crimson;
+    border-top: 2px solid darkolivegreen;
+    border-bottom: 2px solid darkolivegreen;
+    text-align: center;
+}
+#bienvenue {
+    font-weight: bold;
+    font-size: 18px;
+}
+h2 {
+    color: brown;
+    border-bottom: 2px solid coral;
+    display: inline-block;
+}
+#menu {
+    list-style: none;
+    font-size: 18px;
+}
+#menu a {
+    text-decoration: none;
+    color: coral;
+}
+i {
+    color: coral;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.texte-gras {
+    font-weight: bold;
+    font-size: 20px;
+    color: blue;
+}
+
+.vert {
+    background: green;
+    color: white;
+    font-weight: bold;
+
+}
+.rouge {
+    background: red;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid grey;
+    padding: 10px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid coral;
+    padding: 10px;
+    text-align: center;
+    background: coral;
+}
+
+.action {
+    text-align: left;
+    margin: 10px;
+}
+
+.premium {
+
+    padding: 5px;
+    background-color: lawngreen;
+    border: 1px solid lawngreen ;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.bouton_suppr {
+    padding: 5px;
+    background-color: coral;
+    border: 1px solid coral ;
+    border-radius: 10px;
+    color: white;
+}

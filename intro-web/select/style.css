@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+   height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+}
+.form-container h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.form-container form > * {
+    display: block;
+    margin-bottom: 10px;
+}
+.form-container img {
+    display: flex;
+    width: 50px;
+    transform: translateY(-100%);
+    clip-path: circle(60%);
+}
+.image_avatar {
+    margin: auto;
+}

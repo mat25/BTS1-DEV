@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 1rem;
+    width: 225px;
+    background-color: white;
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-affiche {
+    width: 100%;
+    height: 225px;
+}
+
+.card-affiche img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-titre {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.annee, .duree {
+    color: chocolate;
+    font-size: 1.2rem;
+}
+
+.card-realisateur {
+    margin-top: 10px;
+}
+
+.card-realisateur span {
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.card .footer a {
+    display: inline-block;
+    text-decoration: none;
+    background: chocolate;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    border-radius: 3px;
+}
+
+
+
