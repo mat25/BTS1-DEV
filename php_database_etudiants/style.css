@@ -63,7 +63,7 @@ body {
 }
 .grille {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px,300px));
     grid-gap: 30px;
     text-align: center;
 }
@@ -184,4 +184,109 @@ form > input[type=file] {
 .erreur-validation {
     color: red;
     margin-bottom: 15px;
+}
+
+/* Style de la page Contact */
+.grille_contact {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 250px;
+    grid-gap: 10px;
+}
+
+.descritpion_et_horaire h1 {
+    text-align: center;
+    color: #9AC8EB;
+    margin-bottom: 40px;
+}
+.descritpion_et_horaire p {
+    color: #5784BA;
+    margin-bottom: 20px;
+}
+
+
+.logo_reseau_sociaux {
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.logo_reseau_sociaux i {
+    color: #5784BA;
+}
+.logo_reseau_sociaux a {
+    margin: 15px;
+}
+.ville {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #5CAFE7;
+
+}
+.numero {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #9AC8EB;
+}
+.addresse {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #344D59;
+}
+.localisation i {
+    margin-right: 5px;
+    color: #344D59
+}
+.localisation a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.contact_info a {
+    text-align: center;
+    text-decoration: none;
+    color: #5784BA;
+}
+.contact_info {
+    display: flex;
+    height: 160px;
+    align-items: end;
+    justify-content: center;
+
+}
+
+
+.formulaire_contact input {
+    padding-left: 2px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 0;
+    background-color: white;
+    border-bottom: #5784BA 2px solid;
+    font-size: 20px;
+}
+
+.formulaire_contact input[type=submit] {
+    border-radius: 20px;
+    padding: 0;
+    padding-top: 1px;
+    height: 40px;
+}
+.formulaire_contact h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #9AC8EB;
+}
+.formulaire_contact textarea[class=message] {
+    height: 100px;
+    width: 100%;
+    border: none;
+    border-bottom: #5784BA 2px solid;
+    font-size: 20px;
+    outline: none;
+}
+
+.JourDAujourdHui p {
+    color: green;
 }
