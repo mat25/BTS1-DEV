@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grille {
+    display: grid;
+    width: 30%;
+    grid-template-columns: repeat(3,auto);
+    justify-items: center;
+}
+.titre {
+    grid-column: 1/-1;
+    margin: 20px;
+}
+
+.valider {
+    grid-column: 1/-1;
+}
