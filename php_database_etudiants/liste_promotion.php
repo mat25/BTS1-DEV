@@ -29,6 +29,9 @@ $etudiants = selectAllStudents();
         <div class="liste_formation">
             <p><a href="liste_promotion.php">Listes formations</a></p>
         </div>
+        <div class="liste_demande_contact">
+            <p><a href="liste_demande_contact.php">Listes contacts</a></p>
+        </div>
         <div class="nouvelle-etudiant">
             <p><a href="new_student.php">Nouvel Etudiant</a></p>
         </div>

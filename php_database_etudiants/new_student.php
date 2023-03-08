@@ -67,7 +67,7 @@ $erreurs = [];
             $tailleFichier = $_FILES["photo_etudiant"]["size"];
             $extensionFichier = pathinfo($nomFichier, PATHINFO_EXTENSION);
 
-            if ($typeFichier != "image/png" && $typeFichier != "image/jpeg") {
+            if (!($typeFichier == "image/png" || $typeFichier == "image/jpeg")) {
                 echo $typeFichier;
                 $erreurs["photo_etudiant"] = "Seules les images de type .png et .jpeg sont accepter";
             } else {
@@ -113,6 +113,9 @@ $erreurs = [];
         </div>
         <div class="liste_formation">
             <p><a href="liste_promotion.php">Listes formations</a></p>
+        </div>
+        <div class="liste_demande_contact">
+            <p><a href="liste_demande_contact.php">Listes contacts</a></p>
         </div>
         <div class="nouvelle-etudiant">
             <p><a href="new_student.php">Nouvel Etudiant</a></p>
