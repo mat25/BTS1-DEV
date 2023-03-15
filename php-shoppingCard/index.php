@@ -96,24 +96,20 @@
 <body>
     <div class="container">
         <h1>Liste des produits</h1>
-        <div class="icone-panier">
-            <a href="panier.php">
-                <div class="panier">
-                    <div class="panier_p">
-                        <?php
-                        $compteur = 0;
-                        $total = 0;
-                        foreach ($_SESSION["panier"] as $produit) {
-                            $compteur +=1;
-                            $total+= $produit["prix"] * $produit["quantite"];
-                        }
-                        ?>
-                        <p><?= $compteur?> produit(s)</p>
-                        <p><?= $total?> €</p>
-                    </div>
-                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </div>
-            </a>
+        <div class="panier">
+            <a href="panier.php"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            <?php
+            $compteur = 0;
+            $total = 0;
+            foreach ($_SESSION["panier"] as $produit) {
+                $compteur +=1;
+                $total+= $produit["prix"] * $produit["quantite"];
+            }
+            ?>
+            <div class="popup-panier">
+                <p><?= $compteur?> produit(s)</p>
+                <p><?= $total?> €</p>
+            </div>
         </div>
         <div class="produits">
             <?php

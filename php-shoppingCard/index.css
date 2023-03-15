@@ -21,7 +21,7 @@ body {
     font-size: 2rem;
     text-align: center;
     color: black;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .container .icone-panier {
@@ -30,44 +30,30 @@ body {
     font-size: 30px;
 }
 
-.panier p {
-    display: flex;
-    flex-direction: row;
-
-}
 .panier {
-    display: flex;
-    justify-content: end;
-    width: 250px;
-    margin: 0 0 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+    margin-left: 100%;
 }
-
-.panier_p{
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-    font-size: 19px;
-
-}
-.icone-panier {
-    width: 150px;
-    margin: 0 0 0 auto;
-}
-
-.icone-panier a {
-    visibility: hidden;
-    text-decoration: none;
-}
-.icone-panier i {
+.panier i {
+    font-size: 25px;
     color: coral;
-    margin: auto 0;
-    visibility: visible;
 
 }
-.icone-panier a:hover {
-    color: #e74c3c;
-    text-decoration: none;
-    visibility: visible;
+.popup-panier {
+    width: 120px;
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transform: translateX(-110%);
+    padding: 10px;
+    border: 1px solid coral;
+    border-radius: 6px;
+}
+
+.panier:hover .popup-panier {
+    display: block;
 }
 
 
