@@ -20,7 +20,7 @@ body {
     display: grid;
     height: 70px;
     padding-bottom: 100px;
-    grid-template-columns: 1fr auto auto auto auto auto;
+    grid-template-columns: 1fr auto auto auto auto auto auto;
     grid-gap: 10px 35px;
     align-items:center;
     justify-items: left;
@@ -299,4 +299,14 @@ form > input[type=file] {
     justify-content: center;
     width: 80%;
     margin: 0 auto;
+}
+
+/* Style de la page Sign up */
+.form_sign_up input[type=checkbox] {
+    height: 17px;
+    width: 17px;
+}
+.condition_general {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

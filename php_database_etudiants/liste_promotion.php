@@ -38,6 +38,9 @@ $etudiants = selectAllStudents();
         <div class="contact">
             <p><a href="contact.php">Contact</a></p>
         </div>
+        <div class="sign_up">
+            <p><a href="sign_up.php">Sign up</a></p>
+        </div>
     </navigation>
 
     <header class="header">
