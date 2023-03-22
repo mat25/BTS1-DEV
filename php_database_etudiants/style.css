@@ -51,6 +51,10 @@ body {
     font-size: 30px;
     color: #5784BA;
 }
+.header .page_perso {
+    text-align: right;
+    color: #5784BA;
+}
 .carte {
     box-shadow: 0 1px 2px 1px grey;
     border-radius: 10px;
@@ -309,4 +313,20 @@ form > input[type=file] {
 .condition_general {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.form_sign_up a {
+    color: black;
+}
+/* Style de la page Sign in */
+.deconnexion > input[type=submit] {
+    margin: 0;
+    padding: 0;
+    width: 110px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-family: cursive;
+}
+.deconnexion {
+    width: 110px;
 }

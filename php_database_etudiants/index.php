@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once './src/modele/etudiantDB.php';
 require_once './src/utils/dates.php';
 $etudiants = selectAllStudents();
@@ -40,11 +41,25 @@ $etudiants = selectAllStudents();
             <p><a href="contact.php">Contact</a></p>
         </div>
         <div class="sign_up">
-            <p><a href="sign_up.php">Sign up</a></p>
+            <?php
+            if (!isset($_SESSION['connexion']['id'])) { ?>
+                <p><a href="sign_in.php">Connexion</a></p>
+            <?php } else { ?>
+                <form action="sign_in.php" method="post" class="deconnexion">
+                    <input type="submit" name="deconnexion" value="Deconnexion">
+                </form>
+            <?php } ?>
+
         </div>
     </navigation>
 
     <header class="header">
+        <?php
+        if (isset($_SESSION['connexion']['id'])) { ?>
+            <div class="page_perso">
+                <p>bonjour, <?= $_SESSION['connexion']['prenom']." ".$_SESSION['connexion']['nom']?></p>
+            </div>
+        <?php } ?>
         <h1>Best Students</h1>
     </header>
 
