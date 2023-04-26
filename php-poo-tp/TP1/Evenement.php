@@ -2,13 +2,13 @@
 
 class Evenement {
     private string $nom;
-    private string $date;
+    private DateTime $date;
 
 
     public function __construct(string $nom, string $date)
     {
         $this->nom = $nom;
-        $this->date = $date;
+        $this->date =  DateTime::createFromFormat("d/m/Y",$date);
     }
 
     public function getNom(): string
@@ -18,25 +18,18 @@ class Evenement {
 
     public function getDate(): string
     {
-        return $this->date;
+        return $this->date->format("d/m/Y");
     }
 
-    public function getNbJours():string {
-        $dateEvenement = DateTime::createFromFormat("d/m/Y",$this->date);
+    public function getNbJours():int {
         $date = new DateTime();
-        $duree = $dateEvenement->diff($date);
+        $duree = $this->date->diff($date);
         return $duree->days;
     }
 
     public function getCompteARebours():string {
-        $dateEvenement = DateTime::createFromFormat("d/m/Y",$this->date);
         $date = new DateTime();
-        $duree = $dateEvenement->diff($date);
+        $duree = $this->date->diff($date);
         return $duree->format("%a jours, %h heures, %i minutes, %s secondes");
     }
-
-
-
-
-
 }
