@@ -1,0 +1,30 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+
+'https://plantuml.com/class-diagram
+class Livre {
+    -isbn : chaine
+    -titre : chaine
+    -dateParution : Date
+    -nbPages : entier
+    -categorie : chaine
+}
+
+class Auteur {
+    -prenom : chaine
+    -nom : chaine
+}
+
+class Editeur {
+    -nom : chaine
+    -ville : chaine
+}
+
+class Categorie {
+    -nomCategorie : chaine
+}
+Livre "0..*" --> "1..1" Auteur :  est écrit par >
+Livre "0..*" --> "1..1" Editeur : est édité par >
+Livre "0..*" --> "1..1" Categorie : appartient à >
+@enduml
