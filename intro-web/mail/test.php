@@ -1,9 +1,9 @@
 <?php
 
-$destinataire = "dest@test.fr";
+$destinataire = "dest@tests.fr";
 $objet = "Test mailDev";
 $message = "Contenu du message envoyées";
-$emetteur = "emetteur@test.fr";
+$emetteur = "emetteur@tests.fr";
 
 // Définir l'addresse de l'emetteur (from)
 // Positionner les entetes de mail
@@ -11,8 +11,8 @@ $entetes = [
     "from" => $emetteur,
     // TEXT-plain correspond au type MIME du contenus
     "content-type" => "text/html; charset=utf-8",
-    "cc" => "copie1@test.fr,copie2@test.fr",
-    "bcc" => "copie1@test.fr,copie2@test.fr",
+    "cc" => "copie1@tests.fr,copie2@tests.fr",
+    "bcc" => "copie1@tests.fr,copie2@tests.fr",
 ];
 
 /*if (mail($destinataire,$objet,$message,$entetes)) {

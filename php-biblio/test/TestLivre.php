@@ -9,7 +9,7 @@ $auteur = new Auteur("toto","titi");
 $editeur = new Editeur("Editeur3", "Besancon");
 $categorie = new Categorie("SF");
 
-$livre = new Livre("1584585gf4", "test",12,new DateTime("01-01-2023"),$auteur,$editeur,$categorie);
+$livre = new Livre("1584585gf4", "tests",12,new DateTime("01-01-2023"),$auteur,$editeur,$categorie);
 
 // Afficher le nom de l'auteur du livre
 echo $livre->getAuteur()->getNom();
